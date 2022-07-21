@@ -5,7 +5,7 @@ A Node.js library for parsing property addresses. Also includes other address ut
 
 ## Installation
 
-    npm install addresser
+    npm install @yuklai/addresser
 
 ## Usage
 
