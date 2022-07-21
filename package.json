@@ -21,9 +21,9 @@
   "author": "Michael Smith <michael@juniperbay.com> (http://www.michaelosmith.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/moneals/addresser/issues"
+    "url": "https://github.com/yuklai/addresser/issues"
   },
-  "homepage": "https://github.com/moneals/addresser#readme",
+  "homepage": "https://github.com/yuklai/addresser#readme",
   "devDependencies": {
     "chai": "^4.1.2",
     "coveralls": "^3.0.2",
