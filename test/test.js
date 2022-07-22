@@ -705,6 +705,21 @@ describe('#parseAddress', function() {
         expect(result.hasOwnProperty("zipCode")).to.equal(false);
         expect(result.hasOwnProperty("zipCodePlusFour")).to.equal(false);
     });
+    it('should parse a simple Canadian Address with zip Code with no delimiters', function() {
+        var result = addresser.parseAddress("3100 Milliken Avenue Eastvale CA 91752");
+        expect(result.streetNumber).to.equal("3100");
+        expect(result.streetName).to.equal("Milliken");
+        expect(result.streetSuffix).to.equal("Ave");
+        expect(result.hasOwnProperty("streetDirection")).to.equal(false);
+        expect(result.addressLine1).to.equal("3100 Milliken Ave");
+        expect(result.hasOwnProperty("addressLine2")).to.equal(false);
+        expect(result.placeName).to.equal("Eastvale");
+        expect(result.stateAbbreviation).to.equal("CA");
+        expect(result.stateName).to.equal("California");
+        expect(result.zipCode).to.equal("91752");
+        expect(result.hasOwnProperty("zipCodePlusFour")).to.equal(false);
+        
+    });
     
     it('should parse a simple Canadian Address with zip Code with no delimiters', function() {
         var result = addresser.parseAddress("123 Main St Toronto ON M3K5K9");
